@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "627831708505",
+    "project_id": "soz-lugat",
+    "storage_bucket": "soz-lugat.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627831708505:android:68634a6abc3cd1dffbca48",
+        "android_client_info": {
+          "package_name": "com.enigma.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXHjYAKul9raPEhrGZuvxW-bKHh60adgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627831708505:android:80b00846b0c20ecefbca48",
+        "android_client_info": {
+          "package_name": "com.example.soz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXHjYAKul9raPEhrGZuvxW-bKHh60adgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
