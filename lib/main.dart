@@ -8,9 +8,12 @@ import 'providers/game_provider.dart';
 import 'providers/section_provider.dart';
 import 'providers/user_provider.dart';
 import 'screens/admin_screen.dart';
+import 'screens/book_reader_screen.dart';
+import 'screens/books_screen.dart';
 import 'screens/bulk_add_words_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
+import 'screens/main_navigation_screen.dart';
 import 'screens/register_screen.dart';
 import 'screens/sections_screen.dart';
 import 'screens/settings_screen.dart';
@@ -69,7 +72,10 @@ class MyApp extends StatelessWidget {
         routes: {
           LoginScreen.routeName: (_) => const LoginScreen(),
           RegisterScreen.routeName: (_) => const RegisterScreen(),
-          HomeScreen.routeName: (_) => const HomeScreen(),
+          HomeScreen.routeName: (_) => const MainNavigationScreen(),
+          MainNavigationScreen.routeName: (_) => const MainNavigationScreen(),
+          BooksScreen.routeName: (_) => const BooksScreen(),
+          BookReaderScreen.routeName: (_) => const BookReaderScreen(),
           SectionsScreen.routeName: (_) => const SectionsScreen(),
           AdminScreen.routeName: (_) => const AdminScreen(),
           BulkAddWordsScreen.routeName: (_) => const BulkAddWordsScreen(),
@@ -89,7 +95,7 @@ class AuthGate extends StatelessWidget {
     final currentUser = context.watch<AuthProvider>().currentUser;
 
     if (currentUser != null) {
-      return const HomeScreen();
+      return const MainNavigationScreen();
     }
 
     return const LoginScreen();
